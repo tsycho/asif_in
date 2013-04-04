@@ -312,8 +312,6 @@ article nav {
   font-size:.75em;
   line-height: 2.5em;
   padding:.5em;
-  
-  
 }
 
 footer {
@@ -361,7 +359,7 @@ footer {
 
 .products {
   section {
-    @include span-columns(2.5);
+    @include span-columns(5);
     @include omega(2n);
     text-align: center;
     margin-bottom:1.5em;
@@ -417,13 +415,15 @@ footer {
 .about {
   img {
     @include span-columns(2);
-    margin:0 auto 1.5em;
+    margin:1.5em auto 1.5em;
     display:block;
   }
   
   p {
     @include span-columns(3);
-    @include pad;
+    /*@include pad;*/
+    margin: 1em 0 0 1em;
+    padding: 0;
   }
 }
 
