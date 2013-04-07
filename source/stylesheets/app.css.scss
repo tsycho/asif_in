@@ -41,11 +41,11 @@ html {
 }
 
 body {
-    font-family: "lemonde-journal", Georgia; 
+    font-family: Georgia; 
     color:#333;
 }
 
-$base-font-size:20px;
+$base-font-size:18px;
 $base-line-height:30px;
 
 @include establish-baseline;
@@ -123,18 +123,13 @@ header {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 4px;
-    //font-family: "aw-conqueror-sans";
-
-    a {
-      //color:#fff;
-    }
 
     @include media($tablet) {
       @include pad;
     }
   }
 
-    h2 {
+  h2 {
     font-size:.75em;
     line-height: 2.5em;
     font-weight: 400;
@@ -148,7 +143,6 @@ header {
     a {
       //color:rgba(255,255,255,.8);
     }
-
   }
 
   section {
@@ -161,10 +155,7 @@ header {
 }
 
 nav[role="navigation"] {
-  
-  
   margin-bottom: 1.5em;
-  //background: rgba(0,0,0,.05);
 
   .container {
     padding:.5em 0;
@@ -183,7 +174,6 @@ nav[role="navigation"] {
       float:left;
       width:33%;
       text-align: center;
-      //font-family: "aw-conqueror-sans";
       text-transform: uppercase;
       font-size:.75em;
       line-height:2.5em;
@@ -278,7 +268,6 @@ img {
   p li {
     list-style-type: square;
   }
-
 }
 
 blockquote {
@@ -293,7 +282,6 @@ blockquote {
     border-radius: 30px;
     float:left;
   }
-
 
   p {
     
@@ -350,7 +338,6 @@ footer {
       }
     }
   }
-  
 }
 
 .products {
