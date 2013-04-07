@@ -401,6 +401,8 @@ footer {
 .about {
   img {
     @include span-columns(1.75);
+    max-width: 225px;
+    max-height: 300px;
     margin:1em auto 2em;
     display:block;
   }
