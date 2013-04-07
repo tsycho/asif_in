@@ -16,41 +16,13 @@ Here's the code for the OAuth token generator. This is also saved as a [gist](ht
 ### How to use this
 1) Save the above into a file that is accessible to your Rails controllers.
 
+2) From the controller where you want to initiate the token generation request (UsersController in my case), call the generate\_request\_token() method. Save the oauth\_token and oauth\_token\_secret from above into the User's model, and redirect the user to oauth\_request\_url.
+<script src="https://gist.github.com/tsycho/5328705.js"></script>
 
-2) From the controller where you want to initiate the token generation request (UsersController in my case), call the generate_request_token() method. Save the oauth_token and oauth_token_secret from above into the User's model, and redirect the user to oauth_request_url.
-``` ruby
-oauth_request_url, oauth_token, oauth_token_secret = generate_request_token()
-# save oauth_token and oauth_token_secret to @user
-redirect_to oauth_request_url
-```
 3) Once the user has given your app permission (or refused to do so), Google will send a POST to the callback url that was specified above (see line #56). Modify the following code appropriately to handle the callback.
-``` ruby
-class OauthController < ApplicationController
+<script src="https://gist.github.com/tsycho/5328714.js"></script>
 
-	def authenticate
-		oauth_token = params[:oauth_token]
-		oauth_verifier = params[:oauth_verifier]
-		
-		@user = User.find_by_oauth_token(oauth_token)
-		if !@user
-			# Do something appropriate, such as a 404
-		else
-			begin
-				oauth_tokens = get_access_token(oauth_token, @user.oauth_token_secret, oauth_verifier)
-				# Update @user, save oauth_tokens in the database (in a secure way)
-			rescue Exception => e
-				# Something went wrong, or user did not give you permissions on Gmail
-				# Do something appropriate, potentially try again?
-				flash[:error] = "There was an error while authenticating with Gmail. Please try again."
-			end			
-			redirect_to root_url
-		end
-	end
-	  
-end
-```
-
-If everything above worked fine, you should now have the user's oauth_token and oauth_token_secret for Gmail. Use the [gmail_xoauth](http://github.com/nfo/gmail_xoauth) gem for the rest of your work.
+If everything above worked fine, you should now have the user's oauth\_token and oauth\_token\_secret for Gmail. Use the [gmail_xoauth](http://github.com/nfo/gmail_xoauth) gem for the rest of your work.
 
 ### Notes:
 1. I used 'anonymous' for the consumer token and secret. If you have a consumer token and secret from Google, you should use that instead.
