@@ -60,7 +60,7 @@ a {
 
 
 h1 {
-    font-size: 1em;
+    font-size: 1.25em;
     line-height: 1.5em;
     font-weight: 700;
 }
@@ -70,9 +70,10 @@ h2 {
     font-weight: 600;
 }
 h3 {
-    font-size: 1em;
+    font-size: 1.25em;
     line-height: 1.5em;
-    font-weight: 400;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 h4 {
     font-size: 1em;
@@ -293,7 +294,7 @@ blockquote {
 article nav {
   border-top:1px dotted rgba(0,0,0,.3);
   @include span-columns(5);
-  font-size:.75em;
+  font-size:.95em;
   line-height: 2.5em;
   padding:.5em;
 }
