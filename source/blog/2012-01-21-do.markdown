@@ -4,6 +4,7 @@ title: "Do"
 date: 2012-01-21 10:57
 comments: false
 categories: quotes
+tags: quotes
 ---
 
 "Keep moving."

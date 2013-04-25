@@ -1,6 +1,5 @@
 ---
 layout: blog
-# title: "Predictions for 'A Song of Ice and Fire' a.k.a Game of Thrones books 6 and 7"
 title: "A Song of Ice and Fire a.k.a Game of Thrones: Thoughts and Predictions"
 date: 2013-04-24 21:59
 comments: false
@@ -33,11 +32,11 @@ __But I think this is what might happen in the remaining books...__
 
 * By the time the above is done, _winter will have come_. The white walkers would be all over the north and reaching south slowly, though news of this might not have reached the free cities. Melissandre and Bran will reach Daenerys before she sets sail to win the Iron Throne, and convince her that the real threat to humanity is from the white walkers. Daenerys, with Melissandre and Bran's help, will bring her dragons' _fire_ to fight the _ice_ of the white walkers and there will be an epic battle.
 
-* At this point, another big battle to win the Iron throne seems pointless compared to fighting the white walkers, so most likely the Iron throne would effectively fall on its own due to political infighting between the Tyrells and Cersei, and orchestrated by Varys. Cersei would plot and kill Mace Tyrell and potentially Margaery, but she would herself die, maybe even in the hands of Tyrion. I know Cersei is shown as contrite and broken at the end of book 5, but Kevan Lannister's murder should bring her back to her usual self.
+* At this point, another big battle to win the Iron throne seems pointless compared to fighting the white walkers, so most likely the Iron throne would effectively fall on its own due to political infighting between the Tyrells and Cersei, and orchestrated by Varys. Cersei would plot and kill Mace Tyrell and potentially Margaery, but she would herself die, maybe even in the hands of Tyrion. I know Cersei is shown as contrite and broken at the end of _A Dance with Dragons_, but Kevan Lannister's murder should bring her back to her usual self.
 
 * The most likely ending I can predict is with Daenerys and the Targaryens back at the Iron throne, Tyrion becoming the lord of Casterly rock, Bran and Arya going back to Winterfell, and the Free cities granted their independence by Daenerys in return for abolishing slavery.
 
 * The other major subplots that I did not touch have to do with Victarion and Jaime. I expect both of them to die. Victarion will probably die battling the Volantene fleet, which outnumber his ships 5-to-1 as of the end of book 5, while Jaime will probably die fighting the white walkers along with Brienne.
 
-Having said all this, __I hope I am wrong__. GRR Martin has impressed me with his twists and turns, and his willingness to kill off a character that his readers fall in love with. Everyone loves Daenerys, so her turning out as the eventual victor, might be a tad too predictable and what everyone is hoping. If the name didn't include _fire and ice_ with the obvious associations to Daenerys for the fire part, I would have bet that she would have died as well. But since no one can really replace the _mother of dragons_, she remains my most likely candidate to defeat the _ice_. As a thought experiment, however, I will try to come up with an alternate, more surprising ending, in a different post.
+Having written all this, __I hope I am wrong!__. GRR Martin has impressed me with his twists and turns, and his willingness to kill off a character that his readers fall in love with. Everyone loves Daenerys, so her turning out as the eventual victor, might be a tad too predictable and what everyone is hoping. If the name of the series didn't include _ice and fire_ with the strong association to Daenerys for the fire part, I would have bet that she would have died as well. But since no one can really replace the _mother of dragons_, she remains my most likely candidate to defeat the _ice_. As a thought experiment, however, I will try to come up with an alternate, more surprising ending, in a different post.
 
