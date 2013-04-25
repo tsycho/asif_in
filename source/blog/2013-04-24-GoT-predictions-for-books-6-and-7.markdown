@@ -8,7 +8,7 @@ categories: fiction, analysis
 
 _**WARNING: Spoilers ahead! Do not read if you haven't read up to book 5 (A Dance with Dragons)**_
 
-I have been a fan of the ASOIAF (A Song of Ice and Fire) series ever since I saw the first season of Game of Thrones on HBO, and devoured the first four books one after the other. However, I did not like the ending of book 4 (A Feast for Crows), and the reviews of book 5 (A Dance with Dragons) on Amazon weren't very good, so I delayed reading it. But when the TV series restarted, I couldn't resist anymore, and finally read _A Dance with Dragons_ over the last week, finishing it last night. 
+I have been a fan of the _A Song of Ice and Fire_ series ever since I saw the first season of Game of Thrones on HBO, and devoured the first four books one after the other. However, I did not like the ending of book 4 (A Feast for Crows), and the reviews of book 5 (A Dance with Dragons) on Amazon weren't very good, so I delayed reading it. But when the TV series restarted, I couldn't resist anymore, and finally read _A Dance with Dragons_ over the last week, finishing it last night. 
 
 So while the book is still fresh in my mind, I wanted to pen down some of my thoughts and predictions. It might be interesting to read these again when the remaining books in the series are released, currently expected in 2014 and 2017. The following are not in any intentional order:
 
