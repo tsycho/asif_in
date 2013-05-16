@@ -3,7 +3,7 @@ layout: blog
 title: "The case for buying AAPL (as of 3/5/13)"
 date: 2013-03-22
 comments: true
-categories: finance, Apple
+tags: finance, Apple
 ---
 
 

@@ -3,7 +3,7 @@ layout: blog
 title: "A Song of Ice and Fire a.k.a Game of Thrones: Thoughts and Predictions"
 date: 2013-04-24 21:59
 comments: false
-categories: fiction, analysis
+tags: fiction, analysis
 ---
 
 _**WARNING: Spoilers ahead! Do not read if you haven't read up to book 5 (A Dance with Dragons)**_
