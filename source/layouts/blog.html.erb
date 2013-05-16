@@ -5,10 +5,24 @@
       <section>
         <%= yield %>
       </section>
+
+      <nav class="tags">
+        <% if (current_page.tags && current_page.tags.size > 0) %>
+          Tags: 
+          <% current_page.tags.each do |tag| %>
+            <% if tag != current_page.tags[0] %>
+            ,
+            <% end %>
+
+            <a href="/tags/<%= tag %>.html"><%= tag %></a>
+          <% end %>
+        <% end %>
+      </nav>
+
       <nav>
         <% next_article = current_article.previous_article %>
         <% if next_article %>
-            NEXT: <%= link_to "#{next_article.title} &raquo;", next_article.url %>
+          Next: <%= link_to "#{next_article.title} &raquo;", next_article.url %>
         <% end %>
       </nav>
   </div>
