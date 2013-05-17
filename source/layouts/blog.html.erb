@@ -6,6 +6,7 @@
         <%= yield %>
       </section>
 
+      <!--
       <nav class="tags">
         <% if (current_page.tags && current_page.tags.size > 0) %>
           Tags: 
@@ -18,13 +19,15 @@
           <% end %>
         <% end %>
       </nav>
+      -->
 
-      <nav>
-        <% next_article = current_article.previous_article %>
-        <% if next_article %>
+      <% next_article = current_article.previous_article %>
+      <% if next_article %>
+        <nav>
           Next: <%= link_to "#{next_article.title} &raquo;", next_article.url %>
-        <% end %>
-      </nav>
+        </nav>
+      <% end %>
+
   </div>
 
   <script type="text/javascript">
