@@ -21,10 +21,10 @@
       </nav>
       -->
 
-      <% next_article = current_article.previous_article %>
-      <% if next_article %>
+      <% previous_article = current_article.previous_article %>
+      <% if previous_article %>
         <nav>
-          Next: <%= link_to "#{next_article.title} &raquo;", next_article.url %>
+          Previous: <%= link_to "#{previous_article.title} &raquo;", previous_article.url %>
         </nav>
       <% end %>
 
