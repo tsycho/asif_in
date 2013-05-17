@@ -8,7 +8,7 @@ activate :blog do |blog|
   # blog.prefix = "blog"
   blog.permalink = ":title"
   blog.sources = "blog/:title"
-  # blog.taglink = "tags/:tag.html"
+  blog.taglink = "tags/:tag.html"
   blog.layout = "layouts/blog"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
