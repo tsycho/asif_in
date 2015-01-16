@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem "middleman"
 gem "middleman-blog"
+gem "nokogiri"
 
 # Way better markdown support, roll out the red carpet
 gem "redcarpet"
