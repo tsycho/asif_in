@@ -1,0 +1,101 @@
+<% content_for :head do %>
+  <title>Sahir's photo stream</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Tulpen+One' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/photos-stream.css" />
+  <link rel="stylesheet" href="css/featherlight.min.css" />
+
+  <script src="js/vendor/modernizr.js"></script>
+<% end %>
+
+<!-- Header -->
+<% content_for :header do %>
+<div class="row">
+  <div class="large-12 columns photos-header round radius">
+    Sahir's Photo Stream
+  </div>
+</div>
+<% end %>
+
+<% content_for :footer do %>
+
+<% end %>
+
+<!--
+  Generate the data.
+
+  photo_sets is an array of photo_set objects.
+  photo_set is a hashmap of the following form:
+    {
+      date_title    : "Day 0",
+      date_subtitle : "April 11, minutes after birth",
+      urls          : [array of URLs]
+    }
+
+  Each URL is of the form
+      https://farm8.staticflickr.com/7679/16987288890_b66d0a64aa
+  We append "_q.jpg" for thumbnails and "_b.jpg" for the lightbox image.
+
+  See https://www.flickr.com/services/api/misc.urls.html
+-->
+<%
+  def thumb_url(url)
+    return "https://farm8.staticflickr.com" + url + "_q.jpg"
+  end
+
+  def lightbox_url(url)
+    return "https://farm8.staticflickr.com" + url + "_b.jpg"
+  end
+
+  day0 = {
+    "date_title"    => "Day 0",
+    "date_subtitle" => "April 11, minutes after birth",
+    "urls"          => [ "/7679/16987288890_b66d0a64aa" ]
+  }
+
+  day1 = {
+    "date_title"    => "Day 1",
+    "date_subtitle" => "April 12, at the hospital",
+    "urls"          => [ "/7667/17148874756_0717763216",
+                         "/7594/16552392194_a9d80066f6", ]
+  }
+
+  day2_6 = {
+    "date_title"    => "Day 2-6",
+    "date_subtitle" => "First week at home",
+    "urls"          => [ "/7629/16552392094_323ef174e8",
+                         "/7609/16967402227_0660e72f34",
+                         "/7611/16552392124_cfbb2da393",
+                         "/7633/17174211341_87002451f7",
+                         ]
+  }
+
+  photo_sets = [ day0, day1, day2_6 ].reverse
+%>
+
+<% photo_sets.each do |photo_set| %>
+  <div class="row photos-row">
+    <div class="large-3 medium-3 small-12 columns photos-date-column">
+      <div class="photos-date photos-center"><%= photo_set["date_title"] %></div>
+      <div class="photos-subtitle"><%= photo_set["date_subtitle"] %></div>
+    </div>
+
+    <div class="large-9 medium-9 small-12 columns photos-grid-column">
+      <div class="photos-grid photos-center">
+        <% photo_set["urls"].each do |url| %>
+          <a href="<%= lightbox_url(url) %>" data-featherlight="image">
+            <img src="<%= thumb_url(url) %>" />
+          </a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="http://cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.js"></script>
+
+<script src="js/photos-list.js"></script>

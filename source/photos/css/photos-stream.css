@@ -1,0 +1,62 @@
+.photos-center {
+  display: block;
+  margin: auto;
+}
+
+.photos-header {
+  font-family: 'Tulpen One', cursive;
+  font-size: 100px;
+
+  min-height: 200px;
+  text-align: center;
+}
+
+.photos-row {
+  margin-bottom: 60px;
+}
+
+/*********** Date ***********/
+
+.photos-date-column {
+  /*border-right: 2px solid #000000;*/
+}
+
+.photos-date {
+  font-family: 'Tulpen One', cursive;
+  font-size: 40px;
+  color: #ffffff;
+
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 60px;
+
+  text-align: center;
+  vertical-align: center;
+  background-color: #aaaaaa;
+}
+
+.photos-subtitle {
+  font-family: 'Tulpen One', cursive;
+  font-size: 24px;
+  color: #666;
+
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*********** Grid ***********/
+
+.photos-grid-column {
+  border-left: 2px solid #000000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.photos-grid img {
+  margin-left: 10px;
+  margin-bottom: 15px;
+  width: 125px;
+  height: 125px;
+}

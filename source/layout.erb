@@ -8,6 +8,7 @@
     <meta name="description" content="Asif Sheikh, iOS engineer at Google. Lead the Google+ iOS app. Built photobhejo.com, grepfiles.com, inboxslasher.com, and other fun projects.">
     <meta name="viewport" content="width=device-width">
 
+    <%= yield_content :head %>
     <%= stylesheet_link_tag 'normalize', 'app', 'gists' %>
 
     <script type="text/javascript">
@@ -25,25 +26,29 @@
   </head>
   <body>
 
-    <header>
-      <div class="container">
-        <section>
-          <h1><%= link_to "Asif Sheikh", "/" %></h1>
-          <h2>Thinker. Doer.</h2>
-        </section>
-      </div>
-    </header>
+    <% if content_for?(:header) %>
+      <%= yield_content :header %>
+    <% else %>
+      <header>
+        <div class="container">
+          <section>
+            <h1><%= link_to "Asif Sheikh", "/" %></h1>
+            <h2>Thinker. Doer.</h2>
+          </section>
+        </div>
+      </header>
 
-    <nav role="navigation">
-      <div class="container">
-        <ul>
-          <li><%= link_to 'Writings', '/' %></li>
-          <li><%= link_to 'Products', '/products' %></li>
-          <li><%= link_to 'Photos', '/photos' %></li>
-          <li><%= link_to 'About', '/about' %></li>
-        </ul>
-      </div>
-    </nav>
+      <nav role="navigation">
+        <div class="container">
+          <ul>
+            <li><%= link_to 'Writings', '/' %></li>
+            <li><%= link_to 'Products', '/products' %></li>
+            <li><%= link_to 'Photos', '/photos' %></li>
+            <li><%= link_to 'About', '/about' %></li>
+          </ul>
+        </div>
+      </nav>
+    <% end %>
 
     <div class="container">
       <article role="main">
@@ -51,16 +56,20 @@
       </article>
     </div>
 
-    <footer>
-      <div class="container">
-        <section role="attribution">
-          <p>
-            <%= mail_to 'mail@asif.in', image_tag('social/email.png', :height => 32) %>
-            <%= link_to image_tag('social/rss.png', :height => 32), '/feed.xml' %>
-          </p>
-        </section>
-      </div>
-    </footer>
+    <% if content_for?(:footer) %>
+    <%= yield_content :footer %>
+    <% else %>
+      <footer>
+        <div class="container">
+          <section role="attribution">
+            <p>
+              <%= mail_to 'mail@asif.in', image_tag('social/email.png', :height => '32px', :width => '32px') %>
+              <%= link_to image_tag('social/rss.png', :height => '32px', :width => '32px'), '/feed.xml' %>
+            </p>
+          </section>
+        </div>
+      </footer>
+    <% end %>
 
   </body>
 </html>
