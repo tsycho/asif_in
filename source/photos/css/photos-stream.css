@@ -6,8 +6,6 @@
 .photos-header {
   font-family: 'Tulpen One', cursive;
   font-size: 100px;
-
-  min-height: 200px;
   text-align: center;
 }
 
@@ -49,14 +47,20 @@
 /*********** Grid ***********/
 
 .photos-grid-column {
-  border-left: 2px solid #000000;
-  padding-left: 30px;
-  padding-right: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Show a vertical left border for large screens */
+@media (min-width: 641px) {
+  .photos-grid-column {
+    border-left: 2px solid #999;
+  }
 }
 
 .photos-grid img {
   margin-left: 10px;
   margin-bottom: 15px;
-  width: 125px;
-  height: 125px;
+  width: 150px;
+  height: 150px;
 }

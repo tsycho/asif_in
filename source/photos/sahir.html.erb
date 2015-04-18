@@ -13,8 +13,8 @@
 <!-- Header -->
 <% content_for :header do %>
 <div class="row">
-  <div class="large-12 columns photos-header round radius">
-    Sahir's Photo Stream
+  <div class="small-12 columns photos-header round radius">
+    Sahir
   </div>
 </div>
 <% end %>
@@ -69,7 +69,7 @@
                          "/7609/16967402227_0660e72f34",
                          "/7611/16552392124_cfbb2da393",
                          "/7633/17174211341_87002451f7",
-                         ]
+                       ]
   }
 
   photo_sets = [ day0, day1, day2_6 ].reverse
@@ -83,7 +83,7 @@
     </div>
 
     <div class="large-9 medium-9 small-12 columns photos-grid-column">
-      <div class="photos-grid photos-center">
+      <div class="photos-grid">
         <% photo_set["urls"].each do |url| %>
           <a href="<%= lightbox_url(url) %>" data-featherlight="image">
             <img src="<%= thumb_url(url) %>" />
