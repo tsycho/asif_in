@@ -107,8 +107,8 @@
     <div class="large-9 medium-9 small-12 columns photos-grid-column">
       <div class="photos-grid">
         <% photo_set["urls"].each do |url| %>
-          <a href="<%= lightbox_url(url) %>" data-featherlight="image">
-            <img src="<%= thumb_url(url) %>" />
+          <a href="https://farm8.staticflickr.com<%= url %>_b.jpg" data-featherlight="image">
+            <img src="https://farm8.staticflickr.com<%= url %>_q.jpg" />
           </a>
         <% end %>
       </div>
